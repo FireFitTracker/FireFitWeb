@@ -392,10 +392,10 @@ a {
 }
 
 .trend-card {
-  padding: 18px;
-  border-radius: 24px;
-  border: 1px solid var(--line);
-  background: linear-gradient(180deg, rgba(12, 24, 58, 0.96), rgba(10, 21, 51, 0.98));
+  padding: 2px 0 0;
+  border-radius: 0;
+  border: 0;
+  background: transparent;
 }
 
 .trend-header {
@@ -403,7 +403,7 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .trend-title,
@@ -412,45 +412,30 @@ a {
 }
 
 .trend-title {
-  font-size: 1.15rem;
+  font-size: 1.35rem;
+  letter-spacing: -0.03em;
 }
 
 .trend-change {
   color: var(--brand);
+  font-size: 1.1rem;
 }
 
 .trend-chart {
   position: relative;
-  min-height: 160px;
-  padding: 10px 12px 12px 56px;
-  border-radius: 20px;
-  background: rgba(23, 39, 80, 0.92);
-  border: 1px solid rgba(122, 148, 209, 0.1);
+  min-height: 176px;
+  padding: 12px 14px 12px 58px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(31, 46, 84, 0.96), rgba(26, 40, 75, 0.98));
+  border: 1px solid rgba(122, 148, 209, 0.12);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02);
   overflow: hidden;
-}
-
-.trend-chart::before,
-.trend-chart::after {
-  content: "";
-  position: absolute;
-  left: 56px;
-  right: 12px;
-  height: 1px;
-  background: rgba(122, 148, 209, 0.14);
-}
-
-.trend-chart::before {
-  top: 52px;
-}
-
-.trend-chart::after {
-  top: 98px;
 }
 
 .trend-axis {
   position: absolute;
   left: 14px;
-  font-size: 0.88rem;
+  font-size: 0.92rem;
   font-weight: 500;
   color: var(--muted);
 }
@@ -470,18 +455,19 @@ a {
 .trend-line {
   display: block;
   width: 100%;
-  height: 120px;
+  height: 132px;
 }
 
 .trend-line path {
   fill: none;
   stroke: var(--brand);
-  stroke-width: 4;
+  stroke-width: 4.5;
   stroke-linecap: round;
 }
 
 .trend-line circle {
   fill: var(--brand);
+  filter: drop-shadow(0 0 8px rgba(255, 106, 0, 0.18));
 }
 
 .trend-caption {
@@ -1017,8 +1003,7 @@ a {
   }
 
   .trend-card {
-    padding: 14px;
-    border-radius: 20px;
+    padding-top: 0;
   }
 
   .trend-header {
@@ -1026,19 +1011,13 @@ a {
   }
 
   .trend-title {
-    font-size: 1rem;
+    font-size: 1.12rem;
   }
 
   .trend-chart {
-    min-height: 142px;
+    min-height: 154px;
     padding: 10px 10px 10px 48px;
-    border-radius: 18px;
-  }
-
-  .trend-chart::before,
-  .trend-chart::after {
-    left: 48px;
-    right: 10px;
+    border-radius: 20px;
   }
 
   .trend-axis {
@@ -1047,7 +1026,7 @@ a {
   }
 
   .trend-line {
-    height: 110px;
+    height: 118px;
   }
 
   .trend-caption {
