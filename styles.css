@@ -19,6 +19,8 @@
 
 html {
   scroll-behavior: smooth;
+  background: #000a1f;
+  color-scheme: dark;
 }
 
 body {
@@ -747,17 +749,20 @@ a {
     padding: 30px 22px;
   }
 
-  .site-header,
   .site-footer {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .site-header {
+    gap: 14px;
+    align-items: stretch;
   }
 }
 
 @media (max-width: 640px) {
   .page-shell {
     width: min(100% - 20px, 1120px);
-    padding-top: 10px;
   }
 
   .hero h1 {
@@ -777,7 +782,25 @@ a {
     width: 100%;
   }
 
-  .site-nav a,
+  .site-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 14px;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+
+  .site-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-nav a {
+    width: auto;
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+
   .footer-links a,
   .button {
     width: 100%;
