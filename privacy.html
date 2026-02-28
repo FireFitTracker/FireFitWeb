@@ -43,9 +43,16 @@
     <div class="ambient-glow ambient-glow-right" aria-hidden="true"></div>
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="FireFit home">
+        <img class="brand-icon" src="assets/firefit-icon.svg" alt="">
         <img class="brand-wordmark" src="assets/firefit-wordmark.svg" alt="FireFit">
       </a>
-      <nav class="site-nav" aria-label="Primary">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-line"></span>
+        <span class="nav-line"></span>
+        <span class="nav-line"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
         <a href="index.html#features">What We Offer</a>
         <a href="index.html#download">Download</a>
         <a href="faq.html">FAQ</a>
@@ -102,5 +109,6 @@
       </div>
     </footer>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
