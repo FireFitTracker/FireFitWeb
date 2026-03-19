@@ -4,19 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>FireFit App | Built for Discipline</title>
-  <meta name="theme-color" content="#020f2b">
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#020f2b">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#020f2b">
+  <meta name="theme-color" content="#040507">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#040507">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#040507">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta
     name="description"
-    content="FireFit helps people build sustainable fitness habits with guided workouts, recovery insights, and progress tracking."
+    content="FireFit helps people stay consistent with energy tracking, workout logging, progress photos, and projections."
   >
   <meta property="og:title" content="FireFit App | Built for Discipline">
   <meta
     property="og:description"
-    content="Track weight, calories, workouts, and progress in one disciplined system with FireFit."
+    content="Match your routine to the FireFit app experience with energy scores, check-ins, workout planning, and progress tracking."
   >
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/firefit-social.png">
@@ -24,7 +24,7 @@
   <meta name="twitter:title" content="FireFit App | Built for Discipline">
   <meta
     name="twitter:description"
-    content="Track weight, calories, workouts, and progress in one disciplined system with FireFit."
+    content="Stay on track with FireFit's energy score, photos, projections, and workout planning."
   >
   <meta name="twitter:image" content="assets/firefit-social.png">
   <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -35,12 +35,13 @@
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@400;500;700&display=swap"
     rel="stylesheet"
   >
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
   <div class="page-shell">
     <div class="ambient-glow ambient-glow-left" aria-hidden="true"></div>
     <div class="ambient-glow ambient-glow-right" aria-hidden="true"></div>
+
     <header class="site-header">
       <a class="brand" href="#top" aria-label="FireFit home">
         <img class="brand-icon" src="assets/firefit-icon.svg" alt="" width="34" height="34">
@@ -53,6 +54,7 @@
       </button>
       <nav class="site-nav" id="site-nav" aria-label="Primary">
         <a href="#features">What We Offer</a>
+        <a href="#mockups">Mockups</a>
         <a href="#download">Download</a>
         <a href="faq.html">FAQ</a>
         <a href="privacy.html">Privacy Policy</a>
@@ -61,175 +63,236 @@
     </header>
 
     <main id="top">
-      <section class="hero">
+      <section class="hero hero-app">
         <div class="hero-copy">
           <p class="eyebrow">Built for discipline</p>
-          <h1>Track weight, calories, workouts, and progress in one system.</h1>
+          <h1>Feel the app before you even download it.</h1>
           <p class="hero-text">
-            FireFit is designed like the app itself: focused, clear, and performance-first.
-            Log your daily habits, monitor your progress photos, follow your roadmap, and stay
-            accountable with a routine you can actually maintain.
+            The site now mirrors the product itself: dark chrome, blue panel surfaces, sharp orange
+            actions, and a dashboard-first flow built around consistency. Track your energy balance,
+            log workouts, compare progress photos, and see where your pace is heading.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#download">Download the App</a>
-            <a class="button button-secondary" href="#features">See What We Offer</a>
+            <a class="button button-secondary" href="#mockups">View Mockups</a>
+          </div>
+          <div class="hero-highlights">
+            <div class="highlight-chip">
+              <span class="highlight-kicker">Today</span>
+              <strong>Progress Score</strong>
+            </div>
+            <div class="highlight-chip">
+              <span class="highlight-kicker">Energy</span>
+              <strong>Calories in vs out</strong>
+            </div>
+            <div class="highlight-chip">
+              <span class="highlight-kicker">Roadmap</span>
+              <strong>Goal projections</strong>
+            </div>
           </div>
         </div>
-        <div class="hero-card" aria-label="App highlights">
-          <div class="hero-panel">
-            <p class="hero-panel-label">Today</p>
-            <h2 class="hero-panel-title">Daily Snapshot</h2>
-            <p class="hero-panel-text">Calories, check-ins, and progress that stay visible.</p>
-          </div>
-          <div class="metric-grid">
-            <div class="metric metric-purple">
-              <span class="metric-label">Current Weight</span>
-              <strong>232.8 lbs</strong>
+
+        <div class="hero-phone-shell" aria-label="FireFit app preview">
+          <div class="hero-phone">
+            <div class="phone-statusbar">
+              <span>12:40</span>
+              <div class="status-icons">
+                <span></span>
+                <span></span>
+                <span class="status-battery"></span>
+              </div>
             </div>
-            <div class="metric metric-green">
-              <span class="metric-label">Net Pace</span>
-              <strong>On track</strong>
+            <div class="phone-brandbar">
+              <span class="hero-streak">1D streak | 3/7</span>
+              <img class="mockup-wordmark" src="assets/firefit-wordmark.svg" alt="FireFit">
             </div>
-            <div class="metric metric-orange">
-              <span class="metric-label">Workout Log</span>
-              <strong>Plan + track</strong>
+            <div class="hero-screen-card hero-score-card">
+              <p class="hero-card-title">Progress Score</p>
+              <div class="score-ring">
+                <div class="score-ring-inner">
+                  <strong>62</strong>
+                </div>
+              </div>
+              <p class="hero-card-caption">A clear read on how today is shaping up.</p>
             </div>
-            <div class="metric metric-red">
-              <span class="metric-label">Progress Photos</span>
-              <strong>Before / after</strong>
+            <div class="hero-mini-grid">
+              <div class="mini-metric">
+                <span>Eating</span>
+                <strong>54</strong>
+              </div>
+              <div class="mini-metric mini-metric-accent">
+                <span>Fitness</span>
+                <strong>63</strong>
+              </div>
+              <div class="mini-metric mini-metric-orange">
+                <span>Consistency</span>
+                <strong>40</strong>
+              </div>
+              <div class="mini-metric mini-metric-green">
+                <span>Water</span>
+                <strong>89</strong>
+              </div>
             </div>
-          </div>
-          <div class="hero-footer">
-            <span>2d streak</span>
-            <span>2 / 7 complete</span>
-          </div>
-          <div class="trend-card" aria-label="Weight trend preview">
-            <div class="trend-header">
-              <span class="trend-title">Weight Trend</span>
-              <span class="trend-change">-2.4 lbs</span>
+            <div class="hero-bottom-tabs" aria-hidden="true">
+              <span></span>
+              <span class="is-active"></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-            <div class="trend-chart">
-              <span class="trend-axis trend-axis-top">236.2</span>
-              <span class="trend-axis trend-axis-mid">234.0</span>
-              <span class="trend-axis trend-axis-bottom">231.8</span>
-              <svg class="trend-line" viewBox="0 0 280 120" preserveAspectRatio="none" aria-hidden="true">
-                <path d="M38 34 L244 86"></path>
-                <circle cx="38" cy="34" r="5"></circle>
-                <circle cx="244" cy="86" r="5"></circle>
-              </svg>
-            </div>
-            <p class="trend-caption">Showing last 2 entries</p>
           </div>
         </div>
       </section>
 
-      <section class="section" id="features">
+      <section class="section features-section" id="features">
         <div class="section-heading">
           <p class="eyebrow">What We Offer</p>
           <h2>Everything you need to stay on track.</h2>
+          <p class="section-text section-text-centered">
+            The landing page now showcases the same product pillars as the app: daily scoring, energy
+            logging, check-ins, projections, and workout planning.
+          </p>
         </div>
-        <div class="card-grid">
-          <article class="info-card">
-            <h3>Daily Snapshot</h3>
-            <p>See weight, calories, streaks, and the day’s essential actions in one clear dashboard.</p>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <p class="feature-tag">Dashboard</p>
+            <h3>Progress score at a glance</h3>
+            <p>See streaks, category rings, and your daily score in the same focused layout used inside the app.</p>
           </article>
-          <article class="info-card">
-            <h3>Calories Log</h3>
-            <p>Track food and activities with a fast logging flow that keeps your calorie balance visible.</p>
+          <article class="feature-card">
+            <p class="feature-tag">Energy Log</p>
+            <h3>Calories in versus calories out</h3>
+            <p>Track intake, burn, macros, and balance with cards that feel consistent from web to mobile.</p>
           </article>
-          <article class="info-card">
-            <h3>Progress Photos</h3>
-            <p>Compare check-ins side by side so your body changes are easy to see, not just guess.</p>
+          <article class="feature-card">
+            <p class="feature-tag">Progress Photos</p>
+            <h3>Before-and-after check-ins</h3>
+            <p>Keep visual proof of progress front and center with comparison cards and a clean gallery flow.</p>
           </article>
-          <article class="info-card">
-            <h3>Projection Tools</h3>
-            <p>Use current trends, milestones, and estimated timelines to understand where your routine is taking you.</p>
+          <article class="feature-card">
+            <p class="feature-tag">Projections</p>
+            <h3>Roadmaps that explain your pace</h3>
+            <p>Translate your current trend into milestones, status, confidence, and goal timing.</p>
           </article>
-          <article class="info-card">
-            <h3>Workout Planning</h3>
-            <p>Build out your week, log sets and reps, and check off each event as you finish it.</p>
+          <article class="feature-card">
+            <p class="feature-tag">Workout Log</p>
+            <h3>Plan sessions and finish strong</h3>
+            <p>Build a day’s checklist, log reps and distance, and save sessions from a structured weekly view.</p>
           </article>
-          <article class="info-card">
-            <h3>Account + Themes</h3>
-            <p>Manage your profile and personalize the visual style with dark and light themes that fit your workflow.</p>
+          <article class="feature-card">
+            <p class="feature-tag">System Design</p>
+            <h3>One visual language everywhere</h3>
+            <p>Rounded navy surfaces, black app chrome, and orange emphasis create a tighter brand between product and site.</p>
           </article>
         </div>
       </section>
 
-      <section class="section" id="mockups">
+      <section class="section mockups-section" id="mockups">
         <div class="section-heading">
           <p class="eyebrow">Mockups</p>
           <h2>Built to feel like the app.</h2>
+          <p class="section-text section-text-centered">
+            These frames borrow directly from the latest app screens so the marketing site sells the real product, not an outdated concept.
+          </p>
         </div>
-        <p class="section-text section-text-centered">
-          The landing page now borrows the same visual language: dark structure, orange accents,
-          rounded panels, and clear data-first surfaces.
-        </p>
-        <div class="mockup-grid">
-          <article class="phone-frame">
-            <div class="phone-notch"></div>
-            <div class="phone-screen">
-              <div class="mockup-topbar">
-                <img class="mockup-wordmark" src="assets/firefit-wordmark.svg" alt="FireFit">
-                <span class="mockup-meta">2d streak • 2 / 7</span>
+
+        <div class="app-showcase-grid">
+          <article class="app-card app-card-energy">
+            <div class="app-card-top">
+              <span class="app-card-kicker">Energy Log</span>
+              <span class="app-card-icon">+</span>
+            </div>
+            <h3>Log food, activity, and macros in one flow.</h3>
+            <div class="energy-ring-row">
+              <div class="energy-ring">
+                <div class="energy-ring-inner">
+                  <strong>1508</strong>
+                  <span>of 2625 cal</span>
+                </div>
               </div>
-              <div class="mockup-banner">
-                <p class="mockup-kicker">Today</p>
-                <h3>Daily Snapshot</h3>
-                <p>Weight, intake, activity, and your progress at a glance.</p>
-              </div>
-              <div class="mockup-stat-grid">
-                <div class="mockup-stat mockup-stat-purple">232.8 lbs</div>
-                <div class="mockup-stat mockup-stat-green">On track</div>
-                <div class="mockup-stat mockup-stat-orange">122 cal</div>
-                <div class="mockup-stat mockup-stat-red">BMI 34.4</div>
+              <div class="energy-side-metrics">
+                <div><span>Burn</span><strong>515</strong></div>
+                <div><span>Protein</span><strong>108g</strong></div>
+                <div><span>Carbs</span><strong>99g</strong></div>
+                <div><span>Fat</span><strong>78g</strong></div>
               </div>
             </div>
           </article>
 
-          <article class="phone-frame">
-            <div class="phone-notch"></div>
-            <div class="phone-screen">
-              <div class="mockup-topbar">
-                <img class="mockup-wordmark" src="assets/firefit-wordmark.svg" alt="FireFit">
-                <span class="mockup-meta">Log fast</span>
+          <article class="app-card app-card-photos">
+            <div class="app-card-top">
+              <span class="app-card-kicker">Progress Photos</span>
+              <span class="app-card-icon">+</span>
+            </div>
+            <h3>Compare your first check-in with your latest.</h3>
+            <div class="photo-compare">
+              <div class="photo-panel before-photo">
+                <span>Before</span>
+                <strong>234.0 lbs</strong>
               </div>
-              <div class="mockup-banner">
-                <p class="mockup-kicker">Calories Log</p>
-                <h3>Add food or activity in seconds.</h3>
+              <div class="photo-panel after-photo">
+                <span>After</span>
+                <strong>227.2 lbs</strong>
               </div>
-              <div class="mockup-form">
-                <div class="mockup-pill-row">
-                  <span class="mockup-pill mockup-pill-active">Breakfast</span>
-                  <span class="mockup-pill">Lunch</span>
-                </div>
-                <div class="mockup-input">Food or drink</div>
-                <div class="mockup-input">Calories</div>
-                <div class="mockup-cta">Add Food</div>
-              </div>
+            </div>
+            <div class="gallery-strip">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
           </article>
 
-          <article class="phone-frame">
-            <div class="phone-notch"></div>
-            <div class="phone-screen">
-              <div class="mockup-topbar">
-                <img class="mockup-wordmark" src="assets/firefit-wordmark.svg" alt="FireFit">
-                <span class="mockup-meta">Projection</span>
+          <article class="app-card app-card-roadmap">
+            <div class="app-card-top">
+              <span class="app-card-kicker">Projections</span>
+              <span class="app-card-status">Moderate confidence</span>
+            </div>
+            <h3>See where your trend is taking you.</h3>
+            <div class="roadmap-chart">
+              <svg viewBox="0 0 320 170" aria-hidden="true">
+                <path d="M20 40 L90 20 L140 70 L220 110 L300 145" class="roadmap-line roadmap-line-actual"></path>
+                <path d="M20 55 L300 140" class="roadmap-line roadmap-line-target"></path>
+              </svg>
+            </div>
+            <div class="roadmap-stats">
+              <div><span>Pace</span><strong>-5.1 lbs/week</strong></div>
+              <div><span>Status</span><strong>Off pace</strong></div>
+              <div><span>Target</span><strong>-1.0 lbs/week</strong></div>
+              <div><span>Drift</span><strong>+0.8 lbs/week</strong></div>
+            </div>
+          </article>
+
+          <article class="app-card app-card-workout">
+            <div class="app-card-top">
+              <span class="app-card-kicker">Workout Log</span>
+              <span class="app-card-link">Clear day</span>
+            </div>
+            <h3>Log faster with a clean training checklist.</h3>
+            <div class="week-strip">
+              <span>Sun</span>
+              <span>Mon</span>
+              <span>Tue</span>
+              <span>Wed</span>
+              <span class="is-active">Thu</span>
+              <span>Fri</span>
+              <span>Sat</span>
+            </div>
+            <div class="workout-form-card">
+              <div class="workout-input"></div>
+              <div class="workout-tabs">
+                <span class="is-active">Reps</span>
+                <span>Time</span>
+                <span>Distance</span>
+                <span>Rounds</span>
               </div>
-              <div class="mockup-banner">
-                <p class="mockup-kicker">Roadmap</p>
-                <h3>See where your pace is taking you.</h3>
+              <div class="workout-stat-row">
+                <span>3</span>
+                <span>8</span>
+                <span>Wt (opt)</span>
               </div>
-              <div class="mockup-roadmap">
-                <div class="mockup-progress-track">
-                  <span class="mockup-progress-fill"></span>
-                </div>
-                <p class="mockup-success">On track</p>
-                <div class="mockup-list-row"><span>4 weeks</span><strong>230.0 lbs</strong></div>
-                <div class="mockup-list-row"><span>90 days</span><strong>223.8 lbs</strong></div>
-                <div class="mockup-list-row"><span>Goal date</span><strong>May 3, 2027</strong></div>
-              </div>
+              <div class="workout-cta">Add Exercise</div>
             </div>
           </article>
         </div>
@@ -238,17 +301,20 @@
       <section class="section quick-links-section" id="resources">
         <div class="section-heading">
           <p class="eyebrow">Resources</p>
-          <h2>Support and policy pages, separately organized.</h2>
+          <h2>Support pages that match the product polish.</h2>
+          <p class="section-text section-text-centered">
+            Keep FAQs, policies, and contact paths easy to find without breaking the visual rhythm of the new homepage.
+          </p>
         </div>
         <div class="resource-grid">
           <a class="resource-card" href="faq.html">
             <h3>FAQ</h3>
-            <p>Read answers about tracking, projections, support, and how FireFit works.</p>
+            <p>Read answers about tracking, projections, logging, support, and how FireFit works.</p>
             <span>Open FAQ</span>
           </a>
           <a class="resource-card" href="privacy.html">
             <h3>Privacy Policy</h3>
-            <p>Review how FireFit handles account details, activity data, and security.</p>
+            <p>Review how FireFit handles account details, health data, uploads, and security.</p>
             <span>Open Privacy Policy</span>
           </a>
         </div>
@@ -257,10 +323,10 @@
       <section class="section highlight-section" id="download">
         <div class="section-heading">
           <p class="eyebrow">Download</p>
-          <h2>Start training with FireFit today.</h2>
+          <h2>Start tracking with the real FireFit experience.</h2>
         </div>
         <p class="section-text">
-          Download FireFit to keep your check-ins, calories, workouts, roadmap, and progress photos with you every day.
+          Download FireFit to keep your energy score, check-ins, calories, projections, workout plans, and progress photos with you every day.
         </p>
         <div class="download-actions">
           <a class="button button-primary" href="https://firefit.app/download" target="_blank" rel="noreferrer">Download FireFit</a>
@@ -272,10 +338,10 @@
         <div>
           <div class="section-heading left-align">
             <p class="eyebrow">Contact Us</p>
-            <h2>Need support, partnership info, or answers?</h2>
+            <h2>Need support, partnership info, or product answers?</h2>
           </div>
           <p class="section-text">
-            Reach out and we will help with app access, product questions, or business inquiries.
+            Reach out for help with app access, landing page feedback, partnerships, or launch questions.
           </p>
         </div>
         <div class="contact-card">
